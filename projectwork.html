@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project work</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    .section1 {
+      height: 100vh;
+    }
+    nav {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      position: fixed;
+      background-color: rgb(253, 250, 250);
+    }
+    .navfeature {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+    .enno {
+      font-size: 30px;
+      color: rgb(46, 45, 45);
+    }
+    .home,
+    .about1,
+    .service,
+    .portfolio,
+    .team,
+    .dropdown,
+    .contact,
+    .getstarted {
+      color: rgb(77, 76, 76);
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .home {
+      color: green;
+    }
+    .getstarted {
+      width: 100px;
+      height: 30px;
+      background-color: green;
+      border-radius: 25px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .dropdown {
+      display: flex;
+      gap: 10px;
+    }
+    .content1 {
+      width: 100%;
+      height: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .halfsection1 {
+      width: 50%;
+      height: 100%;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .elegant {
+      font-size: 40px;
+      color: #424242;
+    }
+    .solution {
+      font-size: 40px;
+      color: #424242;
+    }
+    
+    .juststart{
+      width: 140px;
+      height: 40px;
+      background-color: rgb(17, 149, 17);
+      border-radius: 25px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }.starts{
+      display: flex;
+      gap: 20px;
+    }
+    .videofont{
+      color: rgb(10, 165, 10);
+      font-size: 40px;
+      display: flex;
+      gap: 20px;
+    }
+    .watches{
+      font-size: 23px;
+      color: #000;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .heroimage1{
+      width: 40%;
+      height: 10%;
+    }
+    .image1 {
+      width: 100%;
+      height: 10%;
+    }
+    .card {
+      height: 30%;
+      width: 100%;
+
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .card1 {
+      height: 100%;
+      width: 30%;
+
+      font-size: 30px;
+      color: green;
+      display: flex;
+      background-color: rgb(238, 238, 241);
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card1text {
+      font-size: 25px;
+      color: #464646;
+    }
+    .card1para {
+      font-size: 15px;
+      color: black;
+    }
+    .card2 {
+      height: 100%;
+      width: 30%;
+      background-color: rgb(238, 238, 241);
+      font-size: 30px;
+      color: green;
+      display: flex;
+
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card2text {
+      font-size: 25px;
+      color: #464646;
+    }
+    .card2para {
+      font-size: 15px;
+      color: black;
+    }
+    .card3 {
+      height: 100%;
+      width: 30%;
+      background-color: rgb(238, 238, 241);
+      font-size: 30px;
+      color: green;
+      display: flex;
+
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card3text {
+      font-size: 25px;
+      color: #464646;
+    }
+    .card3para {
+      font-size: 15px;
+      color: black;
+    }
+    .section2 {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .about2 {
+      width: 100%;
+      height: 10%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: rgb(56, 55, 55);
+    }
+    .abouttext {
+      width: 100%;
+      height: 10%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: rgb(14, 13, 13);
+    }
+    .join {
+      display: flex;
+      width: 100%;
+      height: 50%;
+    }
+    .heroimage2 {
+      width: 50%;
+      height: 60%;
+      display: flex;
+    }
+    .lifestyle {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .lifestylehead {
+      font-size: 35px;
+      color: #6e6c6c;
+    }
+    .lifesen {
+      font-size: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .numbers {
+      width: 100%;
+      height: 30%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .num1 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .clientno{
+      font-size: 20px;
+      color: grey;
+    }
+    .num2 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .projectno{
+      font-size: 20px;
+      color: grey;
+
+    }
+    .num3 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .hoursno{
+      font-size: 20px;
+      color: grey;
+
+    }
+    .num4 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .workersno{
+      font-size: 20px;
+      color: grey;
+
+    }
+    .num1,
+    .num2,
+    .num3,
+    .num4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: green;
+    }
+    /* .section3{
+      height: 100vh;
+     
+    }
+    .service2{
+      width: 100%;
+      height: 10%;
+    
+      font-size: 30px;
+      color: #383838;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .servicesen{
+      width: 100%;
+      height: 10%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .meet{
+      width: 100%;
+      height: 40%;
+        display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+    }
+    .nestbox{
+      width: 30%;
+      height: 100%;
+      display: flex;
+      background-color: aliceblue;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .nestsymbol{
+      font-size: 40px;
+      color: green;
+    }
+    .nesthead{
+      font-size: 30px;
+      color: #383838;
+    }
+    .commandbox{
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: aliceblue;
+      justify-content: center;
+      align-items: center;
+    }
+    .commandsymbol{
+      font-size: 40px;
+      color: green;
+    } */
+    /* .commandhead{
+      font-size: 30px;
+      color: #383838;
+    }
+    .marketbox{
+      width: 30%;
+      height: 100%;
+      background-color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .marketsymbol{
+      font-size: 40px;
+      color: green;
+    }
+    .markethead{
+      font-size: 30px;
+      color: #383838;
+    }
+    .meet2{
+      width: 100%;
+      height: 40%;
+    
+     display: flex;
+     justify-content: space-evenly;
+     gap: 10px;
+    }
+    .nestbox2{
+      width: 30%;
+      height: 100%;
+      background-color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .nestsymbol2{
+      font-size: 40px;
+      color: green;
+    }
+    .nesthead2{
+      font-size: 30px;
+      color: #383838;
+    }
+    .commandbox2{
+      width: 30%;
+      height: 100%;
+      background-color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } 
+    /* .commandsymbol2{
+      font-size: 40px;
+      color: green;
+    }
+    .commandhead2{
+      font-size: 30px;
+      color: #383838;
+    }
+    .marketbox2{
+      width: 30%;
+      height: 100%;
+      background-color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .marketsymbol2{
+      font-size: 40px;
+      color: green;
+    }
+    .markethead2{
+      font-size: 30px;
+      color: #383838;
+    } */
+    .section3 {
+      height: 100vh;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .services {
+      width: 100%;
+      height: 15%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    .services {
+      color: #555454;
+    }
+    .sentence {
+      font-size: 20px;
+    }
+    .boxes1 {
+      width: 100%;
+      height: 40%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .subbox {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid rgb(228, 226, 226);
+      border-radius: 5px;
+    }
+    .subboxs {
+      font-size: 40px;
+      color: green;
+    }
+    .boxes2 {
+      width: 100%;
+      height: 40%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .section4 {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .child1 {
+      height: 15%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .child2 {
+      height: 5%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      color: #444343;
+      text-decoration: none;
+    }
+    a {
+      color: #444343;
+      text-decoration: none;
+    }
+    .row1 {
+      height: 17%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .row2 {
+      height: 17%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .row3 {
+      height: 17%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .row4 {
+      height: 17%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .rowimg1,
+    .rowimg2,
+    .rowimg3,
+    .rowimg4,
+    .rowimg5,
+    .rowimg6,
+    .rowimg7,
+    .rowimg8,
+    .rowimg9,
+    .rowimg10,
+    .rowimg11,
+    .rowimg12 {
+      width: 25%;
+      height: 95%;
+    }
+    .section5 {
+      height: 100vh;
+      gap: 10px;
+    }
+    .test1 {
+      height: 20%;
+      width: 100%;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .test2 {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      justify-content: space-evenly;
+      font-style: italic;
+      font-size: 20px;
+    }
+    .testbox1 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(248, 249, 250);
+    }
+    .testbox2 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(248, 249, 250);
+    }
+    .testbox3 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(248, 249, 250);
+    }
+    .test3 {
+      width: 100%;
+      height: 40%;
+      background-color: rgb(47, 182, 47);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      color: white;
+    }
+    .call {
+      width: 10%;
+      height: 10%;
+      border: 1px solid white;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .section6 {
+      height: 100vh;
+    }
+    .headings {
+      width: 100%;
+      height: 25%;
+      color: #525151;
+      gap: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .imagecontainer {
+      width: 100%;
+      height: 70%;
+      display: flex;
+    }
+    .subimg {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+    .contents1 {
+      width: 50%;
+      height: 25%;
+      background-color: rgb(252, 254, 255);
+      position: absolute;
+      /* bottom: -30px; */
+      top: 275px;
+      color: #5a5959;
+    }
+    .subimg1 {
+      width: 70%;
+      height: 100%;
+    }
+    .section7 {
+      height: 100vh;
+  
+    }
+    .contacts {
+      width: 100%;
+      height: 20%;
+
+      color: #807e7e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .locations {
+      width: 30%;
+      height: 90%;
+
+    }
+    .addressing {
+      width: 100%;
+      height: 20%;
+      background-color: rgb(254, 249, 249);
+      display: flex;
+      flex-direction: column;
+      color: #5f5e5e;
+      width: 100%;
+      height: 20%;
+    }
+    .locationdot {
+      color: green;
+      font-size: 20px;
+      width: 9%;
+      height: 34%;
+      background-color: #e9e8e8;
+      border: 1px solid rgb(248, 248, 248);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .information {
+      width: 40%;
+      height: 90%;
+background-color: rgb(254, 249, 249);
+border: 5px solid white;
+
+    }
+    .locationbox {
+      display: flex;
+      width: 100%;
+      height: 80%;
+
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    form {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      color: #1f1e1e;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+   .locationimg{
+      width: 100%;
+    height: 40%;
+    }
+    .inputbox {
+      width: 40%;
+      height: 10%;
+      display: flex;
+    }
+    .nameemail {
+      width: 85%;
+      display: flex;
+      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .name_input,.email_input{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+     }
+    .email_input input{
+      height: 35px;
+    }
+    .name_input input{
+      height: 35px;
+    }
+    .subject{
+      /* background-color: rebeccapurple; */
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .subject input{
+      width: 100%;
+      height: 35px;
+    
+    }
+    .message{
+      display: flex;
+      flex-direction: column;
+     width: 85%;
+    }
+   .message input{
+    width:100%;
+    height: 160px
+   }
+.sendmessage{
+  width: 30%;
+  height: 40%;
+  background-color: rgb(90, 190, 90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  color: white;
+}
+.sm{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+.section8{
+  height: 100vh;
+}
+.newsletter{
+  width: 100%;
+  height: 40%;
+  background-color: rgb(232, 242, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 40px;
+  color: grey;
+}
+.subscribe{
+  font-size: 20px;
+  color: grey;
+}
+.subscribebox{
+  width: 35%;
+  height: 15%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.subscribebutton{
+  width: 25%;
+  height: 100%;
+  background-color: rgb(55, 188, 55);
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid none;
+  border-radius: 25px;
+}
+.endingbox{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ennoend{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  color: grey;
+}
+.ennos{
+  font-size: 30px;
+  color: grey;
+}
+.useful{
+  width: 15%;
+  height: 100%;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.usefullink{
+  font-size: 20px;
+  color: rgb(3, 1, 20);
+
+}
+.our{
+  width: 15%;
+  height: 100%;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+}
+.ourlink{
+  font-size: 20px;
+  color: rgb(3, 1, 20);
+
+
+}
+.followme{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+  color: grey;
+
+}
+.followuyou{
+  font-size: 30px;
+  color: grey;
+
+}
+.followlink{
+  display: flex;
+  gap: 10px;
+}
+.followx{
+  width: 10%;
+  height: 200%;
+  background-color: rgb(245, 244, 242);
+  border: 1px solid black;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.followfb{
+  width: 10%;
+  height: 200%;
+  border-radius: 50px;
+  background-color: rgb(245, 244, 242);
+  border: 1px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.followin{
+  width: 10%;
+  height: 200%;
+  border-radius: 50px;
+  background-color: rgb(245, 244, 242);
+  border: 1px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.followln{
+  width: 10%;
+  height: 200%;
+  border-radius: 50px;
+  background-color: rgb(245, 244, 242);
+  border: 1px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.copywrite{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+  </style>
+  <body>
+      <nav>
+        <div class="enno">
+          <p>eNno</p>
+        </div>
+        <div class="navfeature">
+          <div class="home">Home</div>
+          <div class="about1">About</div>
+          <div class="service">Service</div>
+          <div class="portfolio">portfolio</div>
+          <div class="team">Team</div>
+          <div class="dropdown">
+            <p>Dropdown</p>
+            <i class="fa-sharp-duotone fa-solid fa-caret-down"></i>
+          </div>
+          <div class="contact">Contact</div>
+          <div class="getstarted">Get Started</div>
+        </div>
+      </nav>
+      <div class="content1">
+        <div class="halfsection1">
+          <div class="elegant">
+            <p>Elegant and Creative</p>
+          </div>
+          <div class="solution">
+            <p>Solutions</p>
+          </div>
+          <div class="starts">
+          <div class="juststart">
+            <p>Get Started</p>
+          </div>
+          <div class="videofont">
+            <i class="fa-solid fa-circle-up"></i>
+            <div class="watches">
+            <p>Watch video</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="heroimage1">
+          <img class="image1" src="hero-img.png" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card1">
+          <i class="fa-solid fa-heart"></i>
+
+          <div class="card1text">
+            <p>Loreum Ipsum</p>
+          </div>
+          <div class="card1para">
+            <p>
+              Loreum Ipsum is the easiest way to get icons on your website is
+              with a Kit getting aheart shape in loreum
+            </p>
+          </div>
+        </div>
+        <div class="card2">
+          <i class="fa-solid fa-code-compare"></i>
+          <div class="card2text">
+            <p>Sed ut perspici</p>
+          </div>
+          <div class="card2para">
+            <p>
+              Sed up perspici is the easiest way to get icons on your website is
+              with a Kit getting aheart shape in loreum
+            </p>
+          </div>
+        </div>
+        <div class="card3">
+          <i class="fa-solid fa-handshake-slash"></i>
+          <div class="card3text">
+            <p>Magini Dollars</p>
+          </div>
+          <div class="card3para">
+            <p>
+              Magini Dollars is the easiest way to get icons on your website is
+              with a Kit getting aheart shape in loreum
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="about2">
+        <p>About</p>
+      </div>
+      <div class="abouttext">
+        <p>
+          An About Us page is a section on a website that provides information
+          about a company
+        </p>
+      </div>
+      <div class="join">
+        <div class="heroimage2">
+          <img class="image2" src="about.png" width="90%" height="200%" />
+        </div>
+
+        <div class="lifestyle">
+          <div class="lifestylehead">
+            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+            </h4>
+          </div>
+          <div class="lifesen">
+            <p>
+              Lifestyle is the interests, opinions, behaviours, and behavioural
+              orientations of an individual, group, or culture. The term "style
+              of life" (German: Lebensstil) was introduced by Austrian
+              psychologist Alfred Adler in his 1929 book, The Case of Miss R.,
+              with the meaning of "a person's basic character as established
+              early in childhood". The broader sense of lifestyle as a "way or
+              style of living" has been documented since 1961. Lifestyle is a
+              combination of determining intangible or tangible factors.
+              Tangible factors relate specifically to demographic variables,
+              i.e. an individual's demographic profile, whereas intangible
+              factors concern the psychological aspects of an individual such as
+              personal values, preferences, and outlooks.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="numbers">
+        <div class="num1">
+          <p>232</p>
+          <div class="clientno">Client</div>
+        </div>
+        <div class="num2">
+          <p>521</p>
+          <div class="projectno">Projects</div>
+        </div>
+        <div class="num3">
+          <p>1453</p>
+          <div class="hoursno">Hours of Support</div>
+        </div>
+        <div class="num4">
+          <p>32</p>
+          <div class="workersno">Workers</div>
+        </div>
+      </div>
+    </div>
+    <div class="section3">
+      <div class="services">
+        <h1>Services</h1>
+
+        <p>
+          An Service Us page is a section on a website that provides information
+        </p>
+      </div>
+      <div class="boxes1">
+        <div class="subbox">
+          <div class="subboxs">
+            <i class="fa-solid fa-square-check"></i>
+          </div>
+
+          <h1>Square Box</h1>
+
+          <p>
+            An Service Us page is a section on a website that provides
+            information
+          </p>
+        </div>
+
+        <div class="subbox">
+          <div class="subboxs">
+            <i class="fa-solid fa-table-cells"></i>
+          </div>
+
+          <h1>Square Box</h1>
+
+          <p>
+            An Service Us page is a section on a website that provides
+            information
+          </p>
+        </div>
+
+        <div class="subbox">
+          <div class="subboxs">
+            <i class="fa-solid fa-square"></i>
+          </div>
+
+          <h1>Square Box</h1>
+
+          <p>
+            An Service Us page is a section on a website that provides
+            information
+          </p>
+        </div>
+      </div>
+      <div class="boxes2">
+        <div class="subbox">
+          <div class="subboxs">
+            <i class="fa-brands fa-square-letterboxd"></i>
+          </div>
+
+          <h1>Square Box</h1>
+
+          <p>
+            An Service Us page is a section on a website that provides
+            information
+          </p>
+        </div>
+
+        <div class="subbox">
+          <div class="subboxs">
+            <i class="fa-solid fa-table-cells-row-lock"></i>
+          </div>
+
+          <h1>Square Box</h1>
+
+          <p>
+            An Service Us page is a section on a website that provides
+            information
+          </p>
+        </div>
+        <div class="subbox">
+          <div class="subboxs">
+            <i class="fa-solid fa-table-cells-large"></i>
+          </div>
+
+          <h1>Square Box</h1>
+
+          <p>
+            An Service Us page is a section on a website that provides
+            information
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section4">
+      <div class="child1">
+        <h1>Portfolio</h1>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="child2">
+        <a href="">ALL </a>
+        <a href="">APP </a>
+        <a href="">PRODUCT </a>
+        <a href="">BRANDING </a>
+        <a href="">BOOKS </a>
+      </div>
+      <div class="row1">
+        <img class="rowimg1" src="product-1.jpg" alt="" />
+        <img class="rowimg2" src="app-1.jpg" alt="" />
+        <img class="rowimg3" src="branding-1 (1).jpg" alt="" />
+      </div>
+      <div class="row2">
+        <img class="rowimg4" src="books-1.jpg" alt="" />
+        <img class="rowimg5" src="app-2.jpg" alt="" />
+        <img class="rowimg6" src="product-2.jpg" alt="" />
+      </div>
+      <div class="row3">
+        <img class="rowimg7" src="branding-2.jpg" alt="" />
+        <img class="rowimg8" src="books-2.jpg" alt="" />
+        <img class="rowimg9" src="app-2.jpg" alt="" />
+      </div>
+      <div class="row4">
+        <img class="rowimg10" src="product-3.jpg" alt="" />
+        <img class="rowimg11" src="branding-3.jpg" alt="" />
+        <img class="rowimg12" src="books-3.jpg" alt="" />
+      </div>
+    </div>
+    <div class="section5">
+      <div class="test1">
+        <h1>Testimonials</h1>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velil
+        </p>
+      </div>
+      <div class="test2">
+        <div class="testbox1">
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="testbox2">
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="testbox3">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </div>
+      </div>
+      <div class="test3">
+        <h1>Call To Action</h1>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+        </p>
+        <div class="call">
+          <p>Call To Action</p>
+        </div>
+      </div>
+    </div>
+    <div class="section6">
+      <div class="headings">
+        <h1>Team</h1>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="imagecontainer">
+        <div class="subimg">
+          <img
+            class="subimg1"
+            src="team-1.jpg"
+            alt=""
+            width="25%"
+            height="70%"
+          />
+          <div class="contents1">
+            <h3>Sarah Jhohnson</h3>
+            <p>______</p>
+            <p>Product Manager</p>
+
+            <i class="fa-solid fa-x"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+
+        <div class="subimg">
+          <img
+            class="subimg1"
+            src="team-2.jpg"
+            alt=""
+            width="25%"
+            height="70%"
+          />
+          <div class="contents1">
+            <h3>william Anderson</h3>
+            <p>______</p>
+            <p>CTO</p>
+
+            <i class="fa-solid fa-x"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <div class="subimg">
+          <img
+            class="subimg1"
+            src="team-3.jpg"
+            alt=""
+            width="50%"
+            height="70%"
+          />
+          <div class="contents1">
+            <h3>Walter White</h3>
+            <p>______</p>
+            <p>Cheif Executive Officer</p>
+
+            <i class="fa-solid fa-x"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section7">
+      <div class="contacts">
+        <h1>CONTACT</h1>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consumers delta
+        </p>
+      </div>
+      <div class="locationbox">
+        <div class="locations">
+          <div class="addressing">
+            <div class="locationdot">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>Address</h3>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
+          <div class="addressing">
+            <div class="locationdot">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>+1 5589 55488 55</p>
+          </div>
+          <div class="addressing">
+            <div class="locationdot">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>info@example.com</p>
+        </div>
+            <img
+            class="locationimg"
+            src="century-trails-location-map.webp"
+            alt=""
+           />
+          </div>
+       
+        <div class="information">
+          <form>
+            <div class="nameemail">
+              <div class="name_input">
+                <label for=""> Your Name</label>
+                <input type="text" />
+              </div>
+              <div class="email_input">
+                <label for=""> Your email</label>
+                <input type="email" />
+              </div>
+             </div>
+       
+             <div class="subject">
+              
+                <label for="">Subject</label>
+         
+                <input type="subject"/>
+       
+             </div>
+             <div class="message">
+              <label for="">Message</label>
+              <input type="text">
+              
+         
+              </div>
+              <div class="sm">
+                <div class="sendmessage">
+                  <p>Send Message</p>
+                </div>
+               </div>           
+          </form>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="section8">
+      <div class="newsletter">
+        <p>Join Our Newsletter</p>
+      
+      <div class="subscribe">
+        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+      </div>
+      <div class="subscribebox">
+        <div class="subscribebutton">
+          <p>Subscribe</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="endingbox">
+        <div class="ennoend">
+          <div class="ennos">enNo</div>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <P>  Phone: +1 5589 5548 55</P>
+          <p>Email: info@example.com</p>
+        </div>
+        <div class="useful">
+          <div class="usefullink">Useful Links</div>
+          <p>> Home</p>
+          <p>> About Us</p>
+          <p>> Service </p>
+          <p>> Terms of Services</p>
+        </div>
+
+      
+      <div class="our">
+        <div class="ourlink">Our Services</div>
+        <p>> Web Design</p>
+        <p>> Web Development</p>
+        <p>> Product Manager </p>
+        <p>> Marketing</p>
+      </div>
+
+      <div class="followme">
+        <div class="followuyou">Follow Us</div>
+
+        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna deritala</p>
+      
+      <div class="followlink">
+        <div class="followx">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="followfb">
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="followin">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="followln">
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      </div>
+      </div>
+            <div class="copywrite">
+        <p>© Copyright eNno All Rights Reserved</p>
+        <p> Designed by  BootstrapMade Distributed by ThemeWagon</p>
+      </div>
+
+      </div>
+    </div>
+  </body>
+</html>
